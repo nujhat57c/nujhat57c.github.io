@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+
+</form>
+<br>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+address: <input type="text" address="fname">
+
+</form>
+<br>
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Id: <input type="number" name="fname">
+
+</form>
+<br>
+
+<!-- <h2>JavaScript Can Validate Input</h2> -->
+
+Age: <input id="numb">
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 8 || x > 25) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</form>
+Phon Number<input id="numb"><br>
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x <  || x > 25) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+</script>
+</body>
+</html> 
